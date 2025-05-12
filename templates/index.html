@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fire Detection System</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+    <h1>🔥 Fire Detection Website</h1>
+    <p>Upload an image to check for fire.</p>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Check Image</button>
+    </form>
+    {% if result %}
+        <h2>{{ result }}</h2>
+        <img src="{{ url_for('static', filename='uploads/' + image_file) }}" width="300">
+    {% endif %}
+</body>
+</html>
