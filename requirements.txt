@@ -1,5 +1,5 @@
-Flask
-tensorflow
-opencv-python
-numpy
-Pillow
+Flask==2.2.2  # (or the version you are using)
+tensorflow==2.11.0  # Specify the version you need; update it as needed
+opencv-python==4.5.5.64  # Specify the version you need
+numpy==1.23.4  # Update with the version you prefer or need
+Pillow==8.4.0  # Update with the version you prefer or need
